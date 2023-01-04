@@ -5,13 +5,13 @@ This tool performs subdomain enumeration, resolves IP addresses, and checks agai
 - Python 3
 - [Subfinder](https://github.com/projectdiscovery/subfinder)
 - [CDNCheck](https://github.com/projectdiscovery/CDNCheck)
-- Shodan Python library
-- A Shodan API key
+- [Shodan Python library](https://github.com/shodan-io/shodan-python)
+- A [Shodan API key](https://account.shodan.io/register)
 
 ## Usage
 - Install the required libraries and tools.
 - Replace YOUR_API_KEY in the script with your Shodan API key.
-- Run the script: python script.py
+- Run the script: `python sub2cdn.py`
 - Enter the initial domain when prompted.
 
 The tool will perform subdomain enumeration using Subfinder, resolve the IP addresses, and check against known CDN IPs using CDNCheck. It will also check each non-CDN IP on Shodan for open ports.
